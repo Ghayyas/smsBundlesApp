@@ -1,0 +1,32 @@
+<!--
+  Generated template for the MessagesPackages page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Message Packages</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <div style="margin-top: 120px;">
+ <div *ngFor="let smsPackages of smsPackages; let i = index; trackBy: trackByFn">
+ 
+ <div *ngIf="smsPackages.networkId == networkId && smsPackages.packageId == packageId">  
+ <h2>Package Name: {{smsPackages.name}}</h2>
+ <p>Number of SMS: {{smsPackages.smsNum}}</p>
+ <p *ngIf="smsPackages.whatsApp">Whats App: {{smsPackages.whatsApp}}</p>
+ <p>Validity: {{smsPackages.validity}}</p>
+ <p>Subcribtion Code: {{smsPackages.subCode}}</p>
+ <p>Subcribtion Charges: {{smsPackages.subFee}}</p>
+ <p *ngIf="smsPackages.unSub">To UnSubscribe: {{smsPackages.unSub}}</p>
+ <p *ngIf="smsPackages.checkStatus">To Check Status: {{smsPackages.checkStatus}}</p>
+</div>
+ </div>
+</div>
+</ion-content>

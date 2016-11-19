@@ -1,0 +1,24 @@
+<!--
+  Generated template for the AllNetworks page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{NetworkName}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+ <div style="margin-top: 120px;">
+ <div *ngFor="let packages of allPackages; let i = index; trackBy: trackByFn">
+ <button ion-button full (click)="gotoPackage(packages)">{{packages.name}}</button>
+</div>
+ </div>
+
+</ion-content>

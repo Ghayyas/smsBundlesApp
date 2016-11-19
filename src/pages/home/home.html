@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      All Packages App
+    </ion-title>
+
+    <ion-buttons end>
+    <button ion-button icon-only>
+     <ion-icon name="information-circle"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <div class="main-head">
+ <h3>Select Your Network</h3>
+ </div>
+ <div style="margin-top: 120px;">
+ <div *ngFor="let networks of allNetworks; let i = index; trackBy: trackByFn">
+ <button ion-button full (click)="gotoNetwork(networks.id)">{{networks.name}}</button>
+</div>
+ </div>
+ 
+</ion-content>

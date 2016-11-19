@@ -1,0 +1,27 @@
+<!--
+  Generated template for the SelectPackage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Select Your Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<div class="main-head">
+ <h3>Select Your Package</h3>
+ </div>
+ <div style="margin-top: 120px;">
+ <div *ngFor="let packages of Packages; let i = index; trackBy: trackByFn">
+ <button ion-button full (click)="gotoNetwork(packages)">{{packages.name}}</button>
+</div>
+ </div>
+
+</ion-content>
