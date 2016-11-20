@@ -15,4 +15,23 @@
 
 <ion-content padding>
 
+   <div style="margin-top: 120px;">
+ <div *ngFor="let smsPackages of smsPackages; let i = index; trackBy: trackByFn">
+ <div *ngIf="smsPackages.networkId == networkId && smsPackages.packageId == packageId">
+ <p *ngIf="smsPackages.noPackage">{{smsPackages.noPackage}}</p>
+ <div *ngIf="!smsPackages.noPackage">  
+ <h2>Package Name: {{smsPackages.name}}</h2>
+ <p>Free Minutes: {{smsPackages.minutes}}</p>
+ <p *ngIf="smsPackages.whatsApp">Whats App: {{smsPackages.whatsApp}}</p>
+ <p>Validity: {{smsPackages.validity}}</p>
+ <p>Subcribtion Code: {{smsPackages.subCode}}</p>
+ <p>Subcribtion Charges: {{smsPackages.subFee}}</p>
+ <p *ngIf="smsPackages.unSub">To UnSubscribe: {{smsPackages.unSub}}</p>
+ <p *ngIf="smsPackages.checkStatus">To Check Status: {{smsPackages.checkStatus}}</p>
+</div>
+ </div>
+</div>
+</div>
+
+
 </ion-content>

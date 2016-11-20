@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-// import {CallPackagesPage} from '../call-packages/call-packages';
-// import { InternetPackagesPage } from '../internet-packages/internet-packages';
+import {CallPackagesPage} from '../call-packages/call-packages';
+import { InternetPackagesPage } from '../internet-packages/internet-packages';
 import { MessagesPackagesPage } from '../messages-packages/messages-packages';
 
 /*
@@ -77,7 +77,18 @@ export class AllNetworksPage {
  }
   gotoPackage(id){
    console.log("packageid",id);
+   if(id.id == '1'){
    this.navCtrl.push(MessagesPackagesPage,id);
- }
-
+   }
+   
+   if(id.id == '2'){
+   this.navCtrl.push(CallPackagesPage,id);
+   }
+   
+   if(id.id == '3'){
+   this.navCtrl.push(InternetPackagesPage,id);
+   }
+   
+  }
+  
 }
