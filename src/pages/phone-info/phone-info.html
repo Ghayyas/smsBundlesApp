@@ -1,0 +1,206 @@
+<!--
+  Generated template for the PhoneInfo page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Phone Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h3>Phone Info page</h3>
+
+<ion-card>
+
+  <ion-card-header>
+    Phone Detail
+  </ion-card-header>
+
+  <ion-card-content>
+<ion-grid>
+
+<ion-row>
+    <ion-col>
+      <strong>Key</strong>
+    </ion-col>
+    <ion-col>
+      <strong>Value</strong>
+    </ion-col>
+ </ion-row>
+ <ion-row>
+   <ion-col>
+     Network:
+    </ion-col>
+    <ion-col>
+     {{simInfo.carrierName}}
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Country Code:
+    </ion-col>
+    <ion-col style="text-transform:capitalize">
+     {{simInfo.countryCode}}
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Device ID:
+    </ion-col>
+    <ion-col>
+     {{simInfo.deviceId}}
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Software Version:
+    </ion-col>
+    <ion-col>
+     {{simInfo.deviceSoftwareVersion}}
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Phone Type:
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneType == 0">
+     None
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneType == 1">
+     GSM
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneType == 2">
+     CDMA
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneType == 3">
+     SIP
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Sim Serial:
+    </ion-col>
+    <ion-col>
+     {{simInfo.simSerialNumber}}
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Sim State:
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 0">
+     Unknown 
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 1">
+       No SIM card is available
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 2">
+       Locked: requires the user's SIM PIN to unlock
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 3">
+       Locked: requires the user's SIM PUK to unlock
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 4">
+       Locked: requires a network PIN to unlock
+    </ion-col>
+    <ion-col *ngIf="simInfo.simState == 5">
+       SIM IS READY
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Phone Number:
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneNumber !== ''">
+     {{simInfo.phoneNumber}}
+    </ion-col>
+    <ion-col *ngIf="simInfo.phoneNumber == ''">
+     <strong>Not Supported</strong>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+     Subscriber ID:
+    </ion-col>
+    <ion-col>
+     {{simInfo.subscriberId}}
+    </ion-col>
+   </ion-row>
+   <ion-row>
+    <ion-col>
+     Data Activity:
+    </ion-col>
+    <ion-col>
+     {{simInfo.dataActivity}}
+    </ion-col>
+   </ion-row>
+    <ion-row>
+    <ion-col>
+     Network Type:
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 0">
+     Unknown
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 1">
+     GPRS
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 2">
+     EDGE
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 3">
+     UMTS
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 4">
+     CDMA: Either IS95A or IS95B
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 5">
+     EVDO revision 0
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 6">
+     EVDO revision A
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 7">
+     1xRTT
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 8">
+     HSDPA
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 9">
+     HSUPA
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 10">
+     HSPA
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 11">
+     iDen
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 12">
+     EVDO revision B
+
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 13">
+     LTE
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 14">
+     eHRPD
+    </ion-col>
+    <ion-col *ngIf="simInfo.networkType == 15">
+     HSPA+
+    </ion-col>
+   </ion-row>
+</ion-grid>
+    
+  </ion-card-content>
+
+</ion-card>
+
+ 
+ 
+
+</ion-content>

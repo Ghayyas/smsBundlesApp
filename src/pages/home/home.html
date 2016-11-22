@@ -5,21 +5,36 @@
     </ion-title>
 
     <ion-buttons end>
-    <button ion-button icon-only>
+    <button ion-button icon-only (click)="gotoAboutPage()">
      <ion-icon name="information-circle"></ion-icon>
     </button>
     </ion-buttons>
+     <ion-buttons end>
+    <button ion-button icon-only (click)="gotoPhonePage()">
+       <ion-icon name="phone-portrait"></ion-icon>
+    </button>
+    </ion-buttons>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="presentPopover($event)">
+  <ion-icon name="more"></ion-icon>
+</button>
+</ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
- <div class="main-head">
- <h3>Select Your Network</h3>
- </div>
- <div style="margin-top: 120px;">
- <div *ngFor="let networks of allNetworks; let i = index; trackBy: trackByFn">
- <button ion-button full (click)="gotoNetwork(networks.id)">{{networks.name}}</button>
+ <div *ngFor="let networks of allNetworks; let i = index;">
+   <ion-card (click)="gotoNetwork(networks.id)">
+  <img src="{{networks.pic}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{networks.name}}
+      </ion-card-title>
+    <p>
+      {{networks.intro}}
+    </p>
+  </ion-card-content>
+</ion-card>
 </div>
- </div>
  
 </ion-content>

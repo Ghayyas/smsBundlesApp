@@ -7,6 +7,11 @@ import { CallPackagesPage } from '../pages/call-packages/call-packages';
 import { InternetPackagesPage } from '../pages/internet-packages/internet-packages';
 import { MessagesPackagesPage } from '../pages/messages-packages/messages-packages';
 import { SelectPackagePage } from "../pages/select-package/select-package";
+import {PopOverPagePage} from "../pages/pop-over-page//pop-over-page";
+import {PhoneInfoPage} from "../pages/phone-info/phone-info";
+import {AboutPage} from "../pages/about/about";
+import {SimInfo} from "../providers/sim-info";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -15,6 +20,9 @@ import { SelectPackagePage } from "../pages/select-package/select-package";
     MessagesPackagesPage,
     InternetPackagesPage,
     CallPackagesPage,
+    PopOverPagePage,
+    PhoneInfoPage,
+    AboutPage,
     SelectPackagePage
   ],
   imports: [
@@ -28,8 +36,11 @@ import { SelectPackagePage } from "../pages/select-package/select-package";
     MessagesPackagesPage,
     InternetPackagesPage,
     CallPackagesPage,
+    PopOverPagePage,
+    PhoneInfoPage,
+    AboutPage,
     SelectPackagePage
   ],
-  providers: []
+  providers: [SimInfo]
 })
 export class AppModule {}

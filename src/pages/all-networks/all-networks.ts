@@ -32,18 +32,21 @@ export class AllNetworksPage {
          id: 1,
          name: "Message Packages",
          networkId: data,
+         pic: './assets/img/message.jpg',
          packageid:packageid
         },
          {
            id:2,
            name: "Call Packages",
            networkId: data,
+           pic: './assets/img/call.jpg',
            packageid:packageid
          },
          {
            id:3,
            name: "Internet Packages",
            networkId: data,
+           pic: './assets/img/internet.jpg',
            packageid:packageid
          }
       ]

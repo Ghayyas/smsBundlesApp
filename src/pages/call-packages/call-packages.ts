@@ -202,6 +202,226 @@ export class CallPackagesPage {
         subFee: "Rs. 1.25/min + tax",
         // checkStatus: "*706# "
       },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk Good Time Offer (Talkshawk)",
+        minutes: 'Unlimited on-net minutes for 2 hours (except 6pm to 9pm)',
+        validity: "Offer will expire after 2 hours.",
+        subCode: "*345*20#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 5.00",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk Full Day Offer (Talkshawk)",
+        minutes: 'Unlimited Telenor Calls',
+        validity: "The offer shall  be valid  till midnight on the day it is subscribed.",
+        subCode: "*5*250#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 12.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk Saat Se Saat Offer (Talkshawk)",
+        minutes: 'Unlimited on-net 7AM-7PM',
+        validity: "The offer is valid for 1 day and will expire at 7PM on the date of subscription.",
+        subCode: "*5*727#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 8.50incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Din Bhar Offer (Talkshawk)",
+        minutes: '6 AM to 6 PM FREE calls',
+        validity: "Validity 1 Day (6AM – 6PM).",
+        subCode: "*345*006#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 10.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk Superhit Offer (Talkshawk)",
+        minutes: 'Free Calls except 7pm-10pm',
+        validity: "Unlimited free on-net calls from Telenor to Telenor except 7PM – 10 PM.",
+        subCode: "*345*006#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 15.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Haftawaar Chhappar Phaar Offer (Talkshawk)",
+        minutes: '700 Onnet Mins + Weekend FREE',
+        validity: "The offer shall be valid till midnight on the seventh day it is subscribed.",
+        subCode: "*5*700#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 74.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "3 Day Din Bhar Offer (Talkshawk)",
+        minutes: '6 AM to 6 PM free calls',
+        validity: "3 Day (6AM – 6PM).",
+        subCode: "*345*626#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 24.50incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk 2 Paisa Weekly Offer (Talkshawk)",
+        minutes: '2paisa/sec for all network.',
+        validity: "The offer will be valid for 7 days from the day of subscription.",
+        subCode: "*345*227#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 4.78incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "3 Day Super hit (Talkshawk)",
+        minutes: 'Make unlimited FREE on-net calls to your friends and family with the Telenor Superhit Offer.',
+        validity: " Free calls except 7pm-10pm",
+        subCode: "*345*227#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 34.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk 2 Paisa Daily (Talkshawk)",
+        minutes: 'Get amazing local call rates on all networks with the Talkshawk 2 Paisa Daily Offer.',
+        validity: "The offer will be valid for 1 day from the day of subscription.",
+        subCode: "*020#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 1.20incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Talkshawk Superload Offer (Talkshawk)",
+        minutes: '25 Minutes', 
+        validity: "Free minutes are valid for 1 day till midnight. ",
+        subCode: "*5*100#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 0.50incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "50 Minutes Bundle (Djuice)",
+        minutes: '50 Telenor Minutes', 
+        validity: "The subscription is valid for 1 day.",
+        subCode: "*345*700#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 9.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "3 Day Onnet Offer (Djuice)",
+        minutes: '250 Telenor Minutes', 
+        validity: "The subscription is valid for 3 days.",
+        subCode: "*730#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 25.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "Prime Time Offer (Djuice)",
+        minutes: 'Free Onnet FNF Calls 9PM - 9AM', 
+        validity: "The subscription is valid for 1 day till 9AM from the time of subscription.",
+        subCode: "*345*929#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 4.00incl. Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 1,
+        name: "djuice Team Offer (Djuice)",
+        minutes: 'Free djuice and FNF calls', 
+        validity: "Offer will be valid for 1 day after the first call/Rs3 internet usage and will expire at midnight.",
+        subCode: "*345*11#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 6.00incl. Tax for first call",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 2,
+        name: "On Net Bundle 250",
+        minutes: '800 On-Net Minutes', 
+        validity: "Monthly.",
+        subCode: "*345*832*",
+        // unSub: "*99*4#",
+        subFee: "Rs. 250.00",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 2,
+        name: "On Net Bundle 100",
+        minutes: '200 On-Net Minutes', 
+        validity: "Monthly.",
+        subCode: "*345*831*",
+        // unSub: "*99*4#",
+        subFee: "Rs. 100.00",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 2,
+        name: "Any Network Voice Bundle 50",
+        minutes: '40 Minutes', 
+        validity: "Monthly.",
+        subCode: "*345*821#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 50+Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 2,
+        name: "Any Network Voice Bundle 250",
+        minutes: '200 Minutes', 
+        validity: "Monthly.",
+        subCode: "*345*822#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 250+Tax",
+        // checkStatus: "*706# "
+      },
+      {
+        networkId: 5,
+        packageId: 2,
+        name: "Any Network Voice Bundle 550",
+        minutes: '550 Minutes', 
+        validity: "Monthly.",
+        subCode: "*345*823#",
+        // unSub: "*99*4#",
+        subFee: "Rs. 550+Tax",
+        // checkStatus: "*706# "
+      },
      ]
     
   }

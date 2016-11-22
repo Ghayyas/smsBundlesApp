@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Select Your Page</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Package</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,13 +15,18 @@
 
 <ion-content padding>
 
-<div class="main-head">
- <h3>Select Your Package</h3>
- </div>
- <div style="margin-top: 120px;">
- <div *ngFor="let packages of Packages; let i = index; trackBy: trackByFn">
- <button ion-button full (click)="gotoNetwork(packages)">{{packages.name}}</button>
+ <div *ngFor="let packages of Packages; let i = index;">
+   <ion-card (click)="gotoNetwork(packages)">
+  <img src="{{packages.pic}}"/>
+  <ion-card-content>
+    <ion-card-title>
+      {{packages.name}}
+      </ion-card-title>
+   
+  </ion-card-content>
+</ion-card>
+   
+ <!--<button ion-button full (click)="gotoNetwork(packages)">{{packages.name}}</button>-->
 </div>
- </div>
 
 </ion-content>

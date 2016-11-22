@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>InternetPackages</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Internet Packages</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +15,8 @@
 
 <ion-content padding>
 
- <div style="margin-top: 120px;">
- <div *ngFor="let smsPackages of smsPackages; let i = index; trackBy: trackByFn">
+ <!--<div style="margin-top: 120px;">
+ <div *ngFor="let smsPackages of smsPackages; let i = index;">
  <div *ngIf="smsPackages.networkId == networkId && smsPackages.packageId == packageId">
  <p *ngIf="smsPackages.noPackage">{{smsPackages.noPackage}}</p>
  <div *ngIf="!smsPackages.noPackage">  
@@ -31,7 +31,89 @@
 </div>
  </div>
 </div>
+</div>-->
+
+<ion-card *ngFor="let smsPackages of smsPackages; let i = index;">
+   <div *ngIf="smsPackages.networkId == networkId && smsPackages.packageId == packageId">
+<div *ngIf="smsPackages.noPackage">
+  <ion-card-content>
+    {{smsPackages.noPackage}}
+    </ion-card-content>
 </div>
+
+<div *ngIf="!smsPackages.noPackage">
+  <ion-card-header>
+    <h2>{{smsPackages.name}}</h2> 
+    </ion-card-header>
+  
+  <ion-card-content>
+    
+    <ion-grid>
+      
+      <ion-row>
+        <ion-col>
+          Free Volume:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.Volume}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col *ngIf="smsPackages.whatsApp">
+          Whats App:
+          </ion-col>
+        <ion-col *ngIf="smsPackages.whatsApp">
+          {{smsPackages.whatsApp}}
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+        <ion-col>
+         Validity:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.validity}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col>
+         Subcribtion Code:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.subCode}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col>
+         Subcribtion Charges:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.subFee}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col *ngIf="smsPackages.unSub">
+         To UnSubscribe:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.unSub}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col *ngIf="smsPackages.checkStatus">
+         To Check Status:
+          </ion-col>
+        <ion-col>
+          {{smsPackages.checkStatus}}
+          </ion-col>
+        </ion-row>
+      
+      </ion-grid>
+    
+    </ion-card-content>
+  </div>
+   </div>
+  </ion-card>
 
 
 </ion-content>

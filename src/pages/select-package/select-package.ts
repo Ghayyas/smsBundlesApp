@@ -20,11 +20,13 @@ export class SelectPackagePage {
       {
         id: 1,
         name: "PrePaid",
+        pic: "./assets/img/prepaid.jpg",
         networkId: this.params.data
       },
       {
         id: 2,
         name: 'PostPaid',
+        pic: './assets/img/postpaid.jpg',
         networkId: this.params.data
       }
       
